@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
-import employee from './employee.json';
+import React from 'react';
+import "./components/Wrapper";
+import "./components/Header"
 
-render() {
-  return (
-      {this.state.employee}
-  );
+
+function App() {
+  return <div className="App">
+    <h1>Hello World</h1>
+  </div>
 }
+
+
 
 export default App;
