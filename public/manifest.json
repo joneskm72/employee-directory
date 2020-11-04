@@ -1,0 +1,9 @@
+{
+  "name": "Employee Directory",
+  "short_name": "Directory",
+
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone"
+}
