@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "department": "Engineering",
+    "type": "Full time",
+    "phone": "111-111-1111",
+    "email": "janedoe@email.com"
+  },
+  {
+    "id": 2,
+    "firstName": "John",
+    "lastName": "Smith",
+    "department": "Sales",
+    "type": "Part time",
+    "phone": "222-222-2222",
+    "email": "johnsmith@email.com"
+  },
+  {
+    "id": 3,
+    "firstName": "Mary",
+    "lastName": "Jones",
+    "department": "Finance",
+    "type": "Full time",
+    "phone": "333-333-3333",
+    "email": "maryjones@email.com"
+  },
+  {
+    "id": 4,
+    "firstName": "Amy",
+    "lastName": "Johnson",
+    "department": "Engineering",
+    "type": "Full time",
+    "phone": "444-444-4444",
+    "email": "amyjohnson@email.com"
+  },
+  {
+    "id": 5,
+    "firstName": "Jim",
+    "lastName": "Gold",
+    "department": "Marketing",
+    "type": "Part time",
+    "phone": "555-555-5555",
+    "email": "jimgold@email.com"
+  },
+  {
+    "id": 6,
+    "firstName": "Lisa",
+    "lastName": "Moore",
+    "department": "Sales",
+    "type": "Full time",
+    "phone": "606-606-6060",
+    "email": "lisamoore@email.com"
+  },
+  {
+    "id": 7,
+    "firstName": "Will",
+    "lastName": "Emerson",
+    "department": "HR",
+    "type": "Full time",
+    "phone": "777-777-7777",
+    "email": "willemerson@email.com"
+  }
+]
