@@ -4,6 +4,7 @@ import './App.css';
 import './components/Wrapper';
 import './components/Header';
 import './components/Main';
+import './employee.json';
 
 function App() {
   return (
