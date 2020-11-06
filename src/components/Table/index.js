@@ -11,7 +11,7 @@ function Table(props) {
         </tr>
       </thead>
       <tbody>
-      {this.state.employees.map((data, key) => {
+      {this.state.employeeData.map((data, key) => {
         return (
           <tr key={key}>
             <td>{data.firstName}</td>
