@@ -1,25 +1,24 @@
 import React from 'react';
 
-function Table(props) {
+function Table( { employees } ) {
   return (
     <table className='table'>
       <thead>
         <tr>
-          <th scope='col' key='firstName'>First Name</th>
-          <th scope='col' key='lastName'>Last Name</th>
-          <th scope='col' key='department'>Department</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Department</th>
         </tr>
       </thead>
       <tbody>
-      {this.state.employeeData.map((data, key) => {
-        return (
-          <tr key={key}>
+      {employees.map(data => (
+          <tr key={data}>
             <td>{data.firstName}</td>
             <td>{data.lastName}</td>
             <td>{data.department}</td>
           </tr>
-        )
-      })}
+        
+      ))}
       </tbody>
     </table>
   );

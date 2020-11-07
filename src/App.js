@@ -4,15 +4,15 @@ import './components/Wrapper';
 import Table from './components/Table'
 import './components/Navbar';
 import Container from './components/Container';
-import data from './employee.json';
+import mockEmployeeData from './employee.json';
 
 class App extends Component {
     state = {
       show: false,
       id: 0,
-      data,
+      mockEmployeeData,
       departments: ["All"],
-      select: "All"
+      select: "All",
     }
   
   render() {
@@ -20,11 +20,12 @@ class App extends Component {
       <Container>
         <h1>Employee Directory</h1>   
           <Table
-            data={this.state.data}
+            employees={mockEmployeeData}
             firstName={this.state.firstName}
             lastName={this.state.lastName}
             department={this.state.department}  
-          /> 
+          />
+         
       </Container>
     );
   }
