@@ -12,20 +12,32 @@
 
 ## General Info
 
+An application that, using React, allows users to view an employee directory, which includes the employees first and last names and departments, as well as sort their first and last names by descending or ascending.
 
 ## Technologies
 
 * JavaScript
 * React
+* CSS
 
 ## How to Use
 
+To run this application locally:
+
+* Clone or download the repository
+* Open the code in your preferred code editor
+* Open the integrated terminal in the code editor
+* Run npm install in the terminal
+* Enter npm start in the terminal
+
+After following these steps, the application will open on local host 3000 in your browser.
 
 ## Application Demo
 
 
 ## Application Link
 
+[Employee Directory](https://joneskm72.github.io/employee-directory/)
 
 ## License
 
