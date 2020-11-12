@@ -34,6 +34,7 @@ After following these steps, the application will open on local host 3000 in you
 
 ## Application Demo
 
+<img src="public/images/employee-chart.png" width="500" />
 
 ## Application Link
 
