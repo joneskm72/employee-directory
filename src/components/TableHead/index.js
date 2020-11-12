@@ -12,7 +12,10 @@ function TableHead(props) {
           <span onClick={props.lastNameAsc}>&#9650;</span>
           <span onClick={props.lastNameDesc}>&#9660;</span>
         </th>
-        <th>Department</th>
+        <th>Department
+          <span onClick={props.deptAsc}>&#9650;</span>
+          <span onClick={props.deptDesc}>&#9660;</span>
+        </th>
       </tr>
     </thead>
   );

@@ -10,6 +10,8 @@ function Table(props) {
         firstNameDesc={props.firstNameDesc}
         lastNameAsc={props.lastNameAsc}
         lastNameDesc={props.lastNameDesc}
+        deptAsc={props.deptAsc}
+        deptDesc={props.deptDesc}
       />
       <TableBody
         employees={props.employees}

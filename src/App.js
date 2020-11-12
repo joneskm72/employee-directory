@@ -49,6 +49,24 @@ class App extends Component {
     this.setState({ mockEmployeeData: last });
   };
 
+  deptAsc  = () => {
+    let dept = this.state.mockEmployeeData;
+
+    dept.sort(function (a, b) {
+      return a.department.localeCompare(b.department);
+    })
+    this.setState({ mockEmployeeData: dept });
+  };
+
+  deptDesc  = () => {
+    let dept = this.state.mockEmployeeData;
+
+    dept.sort(function (a, b) {
+      return b.department.localeCompare(a.department);
+    })
+    this.setState({ mockEmployeeData: dept });
+  };
+
   render() {
     return (
       <Container>
@@ -58,7 +76,9 @@ class App extends Component {
             firstNameAsc={this.firstNameAsc}
             firstNameDesc={this.firstNameDesc}
             lastNameAsc={this.lastNameAsc}
-            lastNameDesc={this.lastNameDesc} 
+            lastNameDesc={this.lastNameDesc}
+            deptAsc={this.deptAsc}
+            deptDesc={this.deptDesc} 
           />
       </Container>
     );
