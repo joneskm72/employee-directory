@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/Wrapper';
-import Table from './components/Table'
-import './components/Navbar';
+import Table from './components/Table';
 import Container from './components/Container';
 import mockEmployeeData from './employee.json';
 
@@ -14,6 +12,24 @@ class App extends Component {
       departments: ["All"],
       select: "All"
     }
+
+    firstNameAsc  = () => {
+      let first = this.state.mockEmployeeData;
+  
+      first.sort(function (a, b) {
+        return a.firstName.localeCompare(b.firstName);
+      })
+      this.setState({ mockEmployeeData: first });
+    };
+  
+    firstNameDesc  = () => {
+      let first = this.state.mockEmployeeData;
+  
+      first.sort(function (a, b) {
+        return b.firstName.localeCompare(a.firstName);
+      })
+      this.setState({ mockEmployeeData: first });
+    };
 
   lastNameAsc  = () => {
     let last = this.state.mockEmployeeData;
@@ -39,11 +55,11 @@ class App extends Component {
         <h1>Employee Directory</h1>   
           <Table
             employees={mockEmployeeData}
-            firstName={this.state.firstName}
-            lastName={this.state.lastName}
-            department={this.state.department}  
+            firstNameAsc={this.firstNameAsc}
+            firstNameDesc={this.firstNameDesc}
+            lastNameAsc={this.lastNameAsc}
+            lastNameDesc={this.lastNameDesc} 
           />
-         
       </Container>
     );
   }

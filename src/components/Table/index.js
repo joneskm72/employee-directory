@@ -1,24 +1,19 @@
 import React from 'react';
+import TableHead from '../TableHead';
+import TableBody from '../TableBody';
 
-function Table( { employees } ) {
+function Table(props) {
   return (
     <table className='table'>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Department</th>
-        </tr>
-      </thead>
-      <tbody>
-      {employees.map(data => (
-          <tr key={data}>
-            <td>{data.firstName}</td>
-            <td>{data.lastName}</td>
-            <td>{data.department}</td>
-          </tr>       
-      ))}
-      </tbody>
+      <TableHead
+        firstNameAsc={props.firstNameAsc}
+        firstNameDesc={props.firstNameDesc}
+        lastNameAsc={props.lastNameAsc}
+        lastNameDesc={props.lastNameDesc}
+      />
+      <TableBody
+        employees={props.employees}
+      />
     </table>
   );
 }
