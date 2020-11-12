@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TableBody(employees) {
+function TableBody({employees}) {
   return (
     <tbody>
       {employees.map(data => (
