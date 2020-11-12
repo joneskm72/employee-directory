@@ -12,9 +12,27 @@ class App extends Component {
       id: 0,
       mockEmployeeData,
       departments: ["All"],
-      select: "All",
+      select: "All"
     }
-  
+
+  lastNameAsc  = () => {
+    let last = this.state.mockEmployeeData;
+
+    last.sort(function (a, b) {
+      return a.lastName.localeCompare(b.lastName);
+    })
+    this.setState({ mockEmployeeData: last });
+  };
+
+  lastNameDesc  = () => {
+    let last = this.state.mockEmployeeData;
+
+    last.sort(function (a, b) {
+      return b.lastName.localeCompare(a.lastName);
+    })
+    this.setState({ mockEmployeeData: last });
+  };
+
   render() {
     return (
       <Container>

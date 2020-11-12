@@ -16,8 +16,7 @@ function Table( { employees } ) {
             <td>{data.firstName}</td>
             <td>{data.lastName}</td>
             <td>{data.department}</td>
-          </tr>
-        
+          </tr>       
       ))}
       </tbody>
     </table>
