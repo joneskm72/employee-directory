@@ -12,7 +12,7 @@
 
 ## General Info
 
-An application that, using React, allows users to view an employee directory, which includes the employees first and last names and departments, as well as sort their first and last names by descending or ascending.
+An application that, using React, allows users to view an employee directory, which includes the employees first and last names and departments, as well as sort their first names, last names, or departments alphabetically in descending or ascending order.
 
 ## Technologies
 
@@ -46,6 +46,6 @@ After following these steps, the application will open on local host 3000 in you
 
 ## Contact
 
-* Email: jones.m.kasey@gmail.com
+Email: jones.m.kasey@gmail.com
 
-* GitHub: https://github.com/joneskm72
+GitHub: https://github.com/joneskm72
